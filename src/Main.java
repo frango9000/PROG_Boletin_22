@@ -22,7 +22,7 @@ public class Main {
         Correo c3 = new Correo("Correo 3");
 
         Buzon buzon = new Buzon();
-        buzon.agregar(c1,c2,c3);
+        buzon.agregar(c1, c2, c3);
 
         //Hay 3 sin leer
         System.out.println(buzon.noLeidos());
