@@ -40,5 +40,23 @@ public class Main {
 
         //no quedan correos sin leer
         System.out.println(buzon.noLeidos());
+
+        //mostramos todos los correos
+        System.out.println(buzon.muestra());
+
+        //agregamos 3 correos mas
+        Correo c4 = new Correo("Correo 4");
+        Correo c5 = new Correo("Correo 5");
+        Correo c6 = new Correo("Correo 6");
+        buzon.agregar(c4, c5, c6);
+
+        //mostramos todos los correos
+        System.out.println(buzon.muestra());
+
+        //eliminamos 1 correo
+        buzon.elimina(2);
+
+        //mostramos todos los correos
+        System.out.println(buzon.muestra());
     }
 }

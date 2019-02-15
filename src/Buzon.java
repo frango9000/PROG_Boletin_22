@@ -37,6 +37,14 @@ public class Buzon {
         return cola.get(k).getContenido();
     }
 
+    public String muestra() {
+        String buzon = "";
+        for (int i = 0; i < cola.size(); i++) {
+            buzon += muestra(i) + "\n";
+        }
+        return buzon;
+    }
+
     public void elimina(int k) {//, que elimina o correo k-ésimo.
         cola.remove(k);
     }
